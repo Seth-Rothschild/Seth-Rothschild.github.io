@@ -1,3 +1,0 @@
-import{O as u,P as x}from"./index.efedd351.js";function O(t){const n=t-1;return n*n*n+1}function q(t){return-t*(t-2)}function C(t,{delay:n=0,duration:o=400,easing:s=x}={}){const a=+getComputedStyle(t).opacity;return{delay:n,duration:o,easing:s,css:c=>`opacity: ${c*a}`}}function S(t,{delay:n=0,duration:o=400,easing:s=O,x:a=0,y:c=0,opacity:f=0}={}){const r=getComputedStyle(t),e=+r.opacity,y=r.transform==="none"?"":r.transform,p=e*(1-f),[l,m]=u(a),[$,d]=u(c);return{delay:n,duration:o,easing:s,css:(i,g)=>`
-			transform: ${y} translate(${(1-i)*l}${m}, ${(1-i)*$}${d});
-			opacity: ${e-p*g}`}}export{S as a,C as f,q};
