@@ -1,5 +1,6 @@
 <div class="content">
   <h1 class="small">Home</h1>
+  <div class="small-divider" />
   <div class="flex">
     <div class="column">
       <h3 class="small">About</h3>
@@ -23,14 +24,6 @@
         >
           Featuretools.
         </a>
-        You can also check my
-        <a
-          href="https://github.com/Seth-Rothschild"
-          target="_blank"
-          rel="noopener noreferrer">Github</a
-        >
-        page for a nice cross section of my interests, or the
-        <a href="/programming">programming</a> page on the sidebar.
       </p>
     </div>
     <img alt="Seth Rothschild" src="headshot.jpg" height="200px" />
@@ -57,7 +50,6 @@
   <p>gmail: seth.j.rothschild</p>
   <p>dell: seth.rothschild</p>
 
-
   <h3 class="small">Resume</h3>
   <p>
     <a href="/seth_rothschild_resume.pdf">PDF Version [Updated February 2024]</a
@@ -79,21 +71,14 @@
 </div>
 
 <style>
-
-  h1 {
-    padding-top: 50px;
-    padding-bottom: 20px;
-  }
   a {
     color: var(--primary);
+    font-weight: bold;
     text-decoration: underline;
   }
 
   .flex {
     display: flex;
-  }
-  .column {
-    min-width: 300px;
   }
   img {
     float: right;

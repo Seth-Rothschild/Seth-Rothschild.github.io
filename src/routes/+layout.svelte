@@ -1,8 +1,10 @@
 <script>
   import { onMount } from "svelte";
-  import { fade } from "svelte/transition";
+  import { fly, fade } from "svelte/transition";
+  import "../app.css";
   let innerWidth = 1000;
   let ready = false;
+  let navVisible = false;
 
   const toggleReady = () => {
     ready = false;
@@ -20,20 +22,57 @@
 
 <svelte:window bind:innerWidth />
 {#if innerWidth < 950}
-  <nav style="width: 100%; padding-top: 20px">
-    <a style="padding-left:50px" on:click={toggleReady} href="/"
-      ><i>home</i>Home</a
+  <nav>
+    <div class="max" />
+    <button
+      on:click={() => {
+        navVisible = !navVisible;
+      }}
+      class="button border"
     >
-    <a on:click={toggleReady} href="/programming/"><i>code</i>Programming</a>
-    <a on:click={toggleReady} href="/patents/"><i>school</i>Patents</a>
+      <i>menu</i>
+    </button>
   </nav>
+  {#if navVisible}
+    <nav
+      transition:fly={{ x: -300, duration: 500 }}
+      class="primary left center"
+      style="width: 200px; padding-top: 20px"
+    >
+      <a on:click={toggleReady} href="/"><i>home</i>Home</a>
+      <div class="small-divider" />
+      <a on:click={toggleReady} href="/programming/"><i>code</i>Programming</a>
+      <div class="small-divider" />
+      <a on:click={toggleReady} href="/patents/"><i>school</i>Patents</a>
+      <div class="small-divider" />
+      <a on:click={toggleReady} href="/seth_rothschild_resume.pdf"
+        ><i>clinical_notes</i>Resume</a
+      >
+    </nav>
+  {/if}
+
+  <!-- <nav style="padding-bottom: 10px">
+    <a class="button border" on:click={toggleReady} href="/"><i>home</i>Home</a>
+    <a class="button border" on:click={toggleReady} href="/programming/"
+      ><i>code</i>Programming</a
+    >
+    <a class="button border" on:click={toggleReady} href="/patents/"
+      ><i>school</i>Patents</a
+    >
+    <a class="button border" on:click={toggleReady} href="/seth_rothschild_resume.pdf"
+      ><i>clinical_notes</i>Resume</a>
+  </nav> -->
 {:else}
-  <nav class="primary left center" style="width: 100px;">
+  <nav class="primary left center" style="width: 130px; padding-top: 20px">
     <a on:click={toggleReady} href="/"><i>home</i>Home</a>
     <div class="small-divider" />
     <a on:click={toggleReady} href="/programming/"><i>code</i>Programming</a>
     <div class="small-divider" />
     <a on:click={toggleReady} href="/patents/"><i>school</i>Patents</a>
+    <div class="small-divider" />
+    <a on:click={toggleReady} href="/seth_rothschild_resume.pdf"
+      ><i>clinical_notes</i>Resume</a
+    >
   </nav>
 {/if}
 {#if ready}
@@ -67,48 +106,4 @@
 </nav> -->
 
 <style>
-  :root,
-  body.light {
-    --primary: #2c3e5f;
-    --on-primary: #ffffff;
-    --primary-container: #e9ddff;
-    --on-primary-container: #22005d;
-    --secondary: #625b71;
-    --on-secondary: #ffffff;
-    --secondary-container: #e8def8;
-    --on-secondary-container: #1e192b;
-    --tertiary: #7e5260;
-    --on-tertiary: #ffffff;
-    --tertiary-container: #ffd9e3;
-    --on-tertiary-container: #31101d;
-    --error: #ba1a1a;
-    --on-error: #ffffff;
-    --error-container: #ffdad6;
-    --on-error-container: #410002;
-    --background: #fffbff;
-    --on-background: #1c1b1e;
-    --surface: #fdf8fd;
-    --on-surface: #1c1b1e;
-    --surface-variant: #e7e0eb;
-    --on-surface-variant: #49454e;
-    --outline: #7a757f;
-    --outline-variant: #cac4cf;
-    --shadow: #000000;
-    --scrim: #000000;
-    --inverse-surface: #313033;
-    --inverse-on-surface: #f4eff4;
-    --inverse-primary: #cfbcff;
-    --surface-dim: #ddd8dd;
-    --surface-bright: #fdf8fd;
-    --surface-container-lowest: #ffffff;
-    --surface-container-low: #f7f2f7;
-    --surface-container: #f2ecf1;
-    --surface-container-high: #ece7eb;
-    --surface-container-highest: #e6e1e6;
-    --overlay: rgb(0 0 0 / 0.5);
-    --active: rgb(0 0 0 / 0.1);
-    --elevate1: 0 0.125rem 0.125rem 0 rgb(0 0 0 / 0.32);
-    --elevate2: 0 0.25rem 0.5rem 0 rgb(0 0 0 / 0.4);
-    --elevate3: 0 0.375rem 0.75rem 0 rgb(0 0 0 / 0.48);
-  }
 </style>
