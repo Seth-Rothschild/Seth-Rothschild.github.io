@@ -8,6 +8,7 @@
 
   const toggleReady = () => {
     ready = false;
+    navVisible = false;
     setTimeout(() => {
       ready = true;
     }, 0);
