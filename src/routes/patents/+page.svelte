@@ -27,10 +27,10 @@
       Method and system for encrypting and decrypting secrets using escrow
       agents</a
     >
-    Suppose you have a very secret password that you can't keep in a password
-    manager -- like the password to your password manager. While you could trust
-    one "escrow provider" to encrypt and store this secret, it would be hard to
-    prevent this provider from peeking. This patent is an invention of
+    Suppose you have a very secret password that you can't keep in a password manager
+    -- like the password to your password manager. While you could trust one "escrow
+    provider" to encrypt and store this secret, it would be hard to prevent this
+    provider from peeking. This patent is an invention of
     <a href="https://en.wikipedia.org/wiki/Radia_Perlman">Radia Perlman's</a> that
     we prototyped which describes a way to keep this secret in escrow, so that a
     quorum of escrow providers need to grant access in order to reconstruct the secret.

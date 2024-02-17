@@ -1,12 +1,5 @@
 <script>
-  import { onMount } from "svelte";
   import ContentCard from "../../components/ContentCard.svelte";
-  let ready = false;
-  onMount(() => {
-    setTimeout(() => {
-      ready = true;
-    }, 0);
-  });
 </script>
 
 <div class="content">
@@ -14,23 +7,42 @@
   <div class="small-divider" />
   <h3 class="small">Example Tools from Work</h3>
   <p>
-    There's a large part of my day-to-day that's considered proprietary information, but a few of the tools I've made have been either disclosed as patents, or would not be considered proprietary. The consistent theme between these and the hobby projects is that I enjoy making tools that make life better.
+    There's a large part of my day-to-day that's considered proprietary
+    information, but a few of the tools I've made have been either disclosed as
+    patents, or would not be considered proprietary. The consistent theme
+    between these and the hobby projects is that I enjoy making tools that make
+    life better.
   </p>
-  <ContentCard order=0>
-    <b>Retriever</b> is an application I made to help the team write and submit reports and patent disclosures. It has a Svelte frontend and Django backend, but the most interesting part is that it uses pandoc to convert from markdown (which the team does like using) into LaTeX templates that match required designs by the org. The upshot of this is that adoption is much higher than similar LaTeX attempts and people actively prefer to use the tool over Word.
+  <ContentCard order="0">
+    <b>Retriever</b> is an application I made to help the team write and submit reports
+    and patent disclosures. It has a Svelte frontend and Django backend, but the
+    most interesting part is that it uses pandoc to convert from markdown (which
+    the team does like using) into LaTeX templates that match required designs by
+    the org. The upshot of this is that adoption is much higher than similar LaTeX
+    attempts and people actively prefer to use the tool over Word.
   </ContentCard>
-  <ContentCard order=1>
-    <b>Springerdoodle</b> was a prototype application I made in Elm and Flask back in 2019 to manage access to remote machines. Noting that the default behavior of developers was to use username/password, this application took care of the mechanics of key transfer and setting up the ssh config. That prototype is associated with the patent <a href="https://patents.google.com/patent/US11489824B2/en?inventor=Seth+Jacob+Rothschild" target="_blank" rel="noopener noreferrer">US11489824B2</a>.
+  <ContentCard order="1">
+    <b>Springerdoodle</b> was a prototype application I made in Elm and Flask
+    back in 2019 to manage access to remote machines. Noting that the default
+    behavior of developers was to use username/password, this application took
+    care of the mechanics of key transfer and setting up the ssh config. That
+    prototype is associated with the patent
+    <a
+      href="https://patents.google.com/patent/US11489824B2/en?inventor=Seth+Jacob+Rothschild"
+      target="_blank"
+      rel="noopener noreferrer">US11489824B2</a
+    >.
   </ContentCard>
-  
 
   <h3 class="small">A few public projects</h3>
   <p>
     My Github page can be found <a
       href="https://github.com/Seth-Rothschild"
       target="_blank"
-      rel="noopener noreferrer">here,</a> and I'm happy to talk about any of the projects in there. Here are a few of the more recent and interesting ones:
-    </p>
+      rel="noopener noreferrer">here,</a
+    > and I'm happy to talk about any of the projects in there. Here are a few of
+    the more recent and interesting ones:
+  </p>
   <ContentCard order="2">
     <a
       href="https://github.com/Seth-Rothschild/goban_irl"

@@ -1,3 +1,7 @@
+<script>
+  import ContentCard from "../components/ContentCard.svelte";
+</script>
+
 <div class="content">
   <h1 class="small">Home</h1>
   <div class="small-divider" />

@@ -1,18 +1,18 @@
-import{S as Z,i as ee,s as te,k as u,q as h,a as R,y as B,l as f,m,r as p,h as r,c as P,z as U,n as d,b as v,J as s,A as W,g as q,d as D,B as M,K as H}from"../chunks/index.28fec676.js";import{C as z}from"../chunks/ContentCard.f70af59b.js";function ne(w){let e,i,o,t,a,y;return{c(){e=u("a"),i=h(`Method and system for encrypting and decrypting secrets using escrow
+import{S as Z,i as ee,s as te,k as u,q as h,a as R,y as B,l as f,m,r as p,h as r,c as P,z as U,n as d,b as v,J as s,A as W,g as q,d as D,B as M,K as H}from"../chunks/index.28fec676.js";import{C as z}from"../chunks/ContentCard.a35e90ab.js";function ne(w){let e,i,o,t,a,y;return{c(){e=u("a"),i=h(`Method and system for encrypting and decrypting secrets using escrow
       agents`),o=h(`
-    Suppose you have a very secret password that you can't keep in a password
-    manager -- like the password to your password manager. While you could trust
-    one "escrow provider" to encrypt and store this secret, it would be hard to
-    prevent this provider from peeking. This patent is an invention of
+    Suppose you have a very secret password that you can't keep in a password manager
+    -- like the password to your password manager. While you could trust one "escrow
+    provider" to encrypt and store this secret, it would be hard to prevent this
+    provider from peeking. This patent is an invention of
     `),t=u("a"),a=h("Radia Perlman's"),y=h(` that
     we prototyped which describes a way to keep this secret in escrow, so that a
     quorum of escrow providers need to grant access in order to reconstruct the secret.
     (with Radia Perlman, Alex Robbins)`),this.h()},l(c){e=f(c,"A",{href:!0,class:!0});var g=m(e);i=p(g,`Method and system for encrypting and decrypting secrets using escrow
       agents`),g.forEach(r),o=p(c,`
-    Suppose you have a very secret password that you can't keep in a password
-    manager -- like the password to your password manager. While you could trust
-    one "escrow provider" to encrypt and store this secret, it would be hard to
-    prevent this provider from peeking. This patent is an invention of
+    Suppose you have a very secret password that you can't keep in a password manager
+    -- like the password to your password manager. While you could trust one "escrow
+    provider" to encrypt and store this secret, it would be hard to prevent this
+    provider from peeking. This patent is an invention of
     `),t=f(c,"A",{href:!0,class:!0});var E=m(t);a=p(E,"Radia Perlman's"),E.forEach(r),y=p(c,` that
     we prototyped which describes a way to keep this secret in escrow, so that a
     quorum of escrow providers need to grant access in order to reconstruct the secret.

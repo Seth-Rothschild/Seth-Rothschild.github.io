@@ -9,13 +9,8 @@
 </script>
 
 <article
-  in:fly={{ duration: duration, easing: easing, delay: delay, x: 100 }}
-  class="border patentcard"
+  in:fly={{ duration: duration, easing: easing, delay: delay, y: 100 }}
+  class="border"
 >
   <slot />
 </article>
-
-<style>
-  .patentcard {
-  }
-</style>
